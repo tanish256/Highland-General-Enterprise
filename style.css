@@ -1,0 +1,121 @@
+body, body *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+header{
+    background-color: white;
+    width: 100%;
+    nav{
+        border-bottom: 1px solid #70707097;
+        height: 50px;
+    }
+}
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+header .banner{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-bottom: #70707097 1px solid;
+    display: flex;
+    img{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .top{
+        display: flex;
+        width: 100%;
+        h1{
+            color: rgb(24, 84, 238);
+            font-size: 35px;
+            font-family: cursive;
+        }
+        img{
+            position: unset;
+            top: unset;
+            height: auto;
+            width: 100px;
+        }
+    }
+}
+.hero{
+    margin:0 5%;
+    width: 50%;
+    padding: 10px;
+    min-height: 250px;
+    background-color: #ffffff1a;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4%;
+    p{
+        font-size: 20px;
+        font-family: cursive;
+        color: #ff7b00;
+        font-weight: bold;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 15px;
+        border: none;
+        width: fit-content;
+        box-shadow: #00000056 1px 1px 8px;
+        background-color: #1875df;
+        color: white;
+        border-radius: 3px;
+    }
+}
+section.about{
+    display: flex;
+    padding:4% 10%;
+    background-color: #e6e6e6;
+    gap: 10%;
+    .info{
+       h2{
+        font-size: 30px;
+        text-transform: capitalize;
+        margin: 10px 0;
+       }
+    }
+    .img{
+        width: 35%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        background-color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: fill;
+        img{
+            width: 75%;
+            
+        }
+    }
+}
+.blue{
+    color: #1875df;
+}
+.orange{
+    color: #ff7b00;
+}
+section.wwd{
+    padding: 3% 0;
+    width: 100%;
+    text-align: center;
+    h2{
+        margin: 10px;
+    }
+}
+
