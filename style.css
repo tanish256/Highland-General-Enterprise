@@ -112,10 +112,106 @@ section.about{
 }
 section.wwd{
     padding: 3% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     text-align: center;
     h2{
         margin: 10px;
     }
+    button{
+        padding: 8px 20px;
+        font-size: 17px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: #00000068 1px 1px 3px;
+        background-color: #ff7b00;
+        color: white;
+    }    
 }
+section.wwd .items{
+    width: 80%;
+    padding: 3% 0;
+    display: flex;
+    justify-content: space-around;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        justify-content: center;
+        width: 30%;
+        background-color: rgb(247, 247, 247);
+        box-shadow: #0000005c 1px 1px 3px;
+        p{
+            line-height: 45px;
+            font-size: 18px;
+            box-shadow: unset
+        }
+        img{
+            width: 100%;
+        }
 
+    }
+}
+section.projects{
+    padding: 1.8% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+    h2{
+        padding: 10px 0;
+    }
+    .items{
+        display: flex;
+        padding: 1%;
+        width: 80%;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            width: 30%;
+            img{
+                margin: 0;
+                display: block;
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+section.nfooter{
+    background-image: url(banner.webp);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 10%;
+    h2{
+        font-size: 35px;
+        color: #ffffff;
+        text-shadow: #00000068 1px 1px 3px;
+    }
+    p{
+        color: #ffffff;
+        font-size: 18px;
+        text-shadow: #00000068 1px 1px 3px;
+    }
+    button{
+        padding: 10px 25px;
+        font-size: 16px;
+        border: none;
+        font-family: sans-serif;
+        border-radius: 3px;
+        box-shadow: #00000081 1.5px 1.5px 5px;
+        color: white;
+        background-color: #1875df;
+    }
+}
