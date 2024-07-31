@@ -3,6 +3,9 @@ body, body *{
     padding: 0;
     font-family: sans-serif
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     background-color: white;
     width: 100%;
@@ -18,7 +21,11 @@ header nav ul{
     align-items: center;
     line-height: 50px;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 }
 header .banner{
     height: 500px;
@@ -135,26 +142,43 @@ section.wwd .items{
     padding: 3% 0;
     display: flex;
     justify-content: space-around;
+    gap: 10px;
     div{
+        transition: all 0.5s ease;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: fit-content;
         justify-content: center;
         width: 30%;
+        border-radius: 3px;
         background-color: rgb(247, 247, 247);
         box-shadow: #0000005c 1px 1px 3px;
+        cursor: pointer;
         p{
             line-height: 45px;
             font-size: 18px;
             box-shadow: unset
         }
         img{
+            transition: all 0.5s ease;
             aspect-ratio: 2/1.4;
+            align-self: flex-start;
             object-fit: cover;
             width: 100%;
         }
 
+    }
+}
+section.wwd .items div:hover{
+    width: 50%;
+    border-radius: 0;
+    transition: all 0.5s ease;
+    
+    img{
+        width: 50%;
+        align-self: flex-start;
+        transition: all 0.5s ease;
     }
 }
 section.projects{
@@ -290,6 +314,24 @@ footer{
         p{
             padding: 5px 10%;
             font-size: 18px;
+        }
+    }
+}
+@media (max-width:500px) {
+    header .banner{
+        height: 350px;
+        .hero{
+            margin:2%;
+            width: 100%;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .top{
+            h1{
+                font-size: 25px;
+            }
         }
     }
 }
