@@ -13,10 +13,17 @@
         <header>
             <nav>
                 <div class="logo">
+                    <div class="l">
                     <img src="logo.png" alt="">
                     <h1>HIGHLANDS GENERAL ENTERPRISES</h1>
+                    </div>
+                    <a class="McButton" data="hamburger-menu">
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                      </a>
                 </div>
-                <ul>
+                <ul id="menu">
                     <a href="#"><li>Home</li></a>
                     <a href="#services"><li>Services</li></a>
                     <a href="#projects"><li>Projects</li></a>
@@ -124,9 +131,18 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        $(document).ready(function() {
+            var McButton = $("[data=hamburger-menu]");
+
+            McButton.click(function() {
+                $(this).toggleClass("active");
+                $("#menu").slideToggle();
+            });
+        });
       </script>
 </body>
 </html>

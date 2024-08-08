@@ -19,7 +19,13 @@ header{
         justify-content: space-between;
     }
 }
-header nav .logo{
+header nav .logo
+{ 
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    .l{
     object-fit: cover;
     display: flex;
     width: 220px;
@@ -33,6 +39,7 @@ header nav .logo{
         font-size: 14px;
         color: #1854ee;
     }
+}
 }
 header nav ul{
     list-style-type: none;
@@ -346,6 +353,47 @@ footer{
         }
     }
 }
+.McButton {
+    display: none;
+    position: relative;
+    width: 44px;
+    height: 23px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .McButton b {
+    position: absolute;
+    right: 0;
+    width: 44px;
+    height: 3px;
+    background-color: #000000;
+  }
+  .McButton b:nth-child(1) {
+    top: 0;
+  }
+  .McButton b:nth-child(2) {
+    top: 50%;
+  }
+  .McButton b:nth-child(3) {
+    top: 100%;
+  }
+  .McButton.active b:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  
+  .McButton.active b:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .McButton.active b:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+  
+  .McButton.active {
+    transform: rotate(135deg);
+  }
 @media (max-width:500px) {
     header .banner{
         height: 350px;
@@ -363,6 +411,26 @@ footer{
             }
         }
     }
+    .McButton {
+        display: unset;}
+    #menu{
+        display: none;
+        flex-direction: column;
+        top:70px;
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+        right: 0;
+        border-top: 1px #0000007a solid;
+        background-color: white;
+        a{
+            text-align: center;
+            width: 100%;
+        }
+    }
+    #menu a:hover{
+        background-color: #7d92ed !important;
+    }
     section.about{
         flex-direction: column-reverse;
         align-items: center;
@@ -376,6 +444,9 @@ footer{
                 width: 80%;
             }
         }
+    }
+    .McButton {
+        display: unset;
     }
     section.wwd .items div:hover{
         width: 90%;
@@ -404,3 +475,8 @@ footer{
         }
     }
 }
+@media (min-width: 501px) {
+    #menu {
+      display: flex !important;
+    }
+  }
