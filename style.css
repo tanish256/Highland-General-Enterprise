@@ -4,6 +4,7 @@ body, body *{
     font-family: sans-serif
 }
 html{
+    background-color: whitesmoke;
     scroll-behavior: smooth;
 }
 header{
@@ -11,17 +12,37 @@ header{
     width: 100%;
     nav{
         border-bottom: 1px solid #70707097;
-        height: 50px;
+        height: 70px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+header nav .logo{
+    object-fit: cover;
+    display: flex;
+    width: 220px;
+    align-items: center;
+    height: 40px;
+    z-index: 9999;
+    img{
+        height: 100%;
+    }
+    h1{
+        font-size: 14px;
+        color: #1854ee;
     }
 }
 header nav ul{
     list-style-type: none;
     display: flex;
+    width: 60%;
     justify-content: space-evenly;
     align-items: center;
     line-height: 50px;
     font-family: sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     a{
         color: black;
         text-decoration: none;
@@ -43,7 +64,7 @@ header .banner{
         display: flex;
         width: 100%;
         h1{
-            color: rgb(24, 84, 238);
+            color: #1854ee;
             font-size: 35px;
             font-family: cursive;
         }
@@ -200,7 +221,12 @@ section.projects{
         flex-wrap: wrap;
         justify-content: center;
         div{
+            transition: all 0.4s ease;
             width: 30%;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: #1e1e1e72 3px 3px 6px;
+            border-radius: 2px;
             img{
                 margin: 0;
                 display: block;
@@ -211,6 +237,9 @@ section.projects{
             }
         }
     }
+}
+section.projects .items div:hover{
+    scale: 1.05;
 }
 section.nfooter{
     .bgimg{
@@ -332,6 +361,46 @@ footer{
             h1{
                 font-size: 25px;
             }
+        }
+    }
+    section.about{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    section.wwd{
+        .items{
+            align-items: center;
+            width: 90%;
+            flex-direction: column;
+            div{
+                width: 80%;
+            }
+        }
+    }
+    section.wwd .items div:hover{
+        width: 90%;
+        border-radius: 0;
+        transition: all 0.5s ease;
+        
+        img{
+            width: 50%;
+            align-self: flex-start;
+            transition: all 0.5s ease;
+        }
+    }
+    section.projects .items{
+        margin-top: 10px;
+        width: 95%;
+        gap: 15px;
+        div{
+            width: 40%;
+            
+        }
+    }
+    footer{
+        flex-direction: column;
+        .about , .services, .contact{
+            width: 100%;
         }
     }
 }
