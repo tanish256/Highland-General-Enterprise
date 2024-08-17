@@ -178,35 +178,54 @@ section.wwd .items{
         align-items: center;
         height: fit-content;
         justify-content: center;
+        position: relative;
         width: 30%;
         border-radius: 3px;
         background-color: rgb(247, 247, 247);
         box-shadow: #0000005c 1px 1px 3px;
         cursor: pointer;
+        p.back{
+            line-height: unset;
+            position: absolute;
+            font-size: 15;
+            background-color: unset;
+            background-color: #bdbdbd00;
+            z-index: 4;
+            padding: 15px 3%;
+            color: #800b0b00;
+            transition: all 1s ease;
+            width: 94%;
+        }
         p{
             line-height: 45px;
             font-size: 18px;
-            box-shadow: unset
+            box-shadow: unset;
+            background-color: white;
+            width: 100%;
         }
         img{
             transition: all 0.5s ease;
             aspect-ratio: 2/1.4;
             align-self: flex-start;
+            z-index: 2;
             object-fit: cover;
             width: 100%;
+            
         }
 
     }
 }
 section.wwd .items div:hover{
-    width: 50%;
     border-radius: 0;
     transition: all 0.5s ease;
-    
+    p.back{
+        color: #052952;
+        background-color: #ffffff74;
+        display: block;
+    }
     img{
-        width: 50%;
-        align-self: flex-start;
         transition: all 0.5s ease;
+        filter: blur(2px);
     }
 }
 section.projects{
@@ -447,17 +466,6 @@ footer{
     }
     .McButton {
         display: unset;
-    }
-    section.wwd .items div:hover{
-        width: 90%;
-        border-radius: 0;
-        transition: all 0.5s ease;
-        
-        img{
-            width: 50%;
-            align-self: flex-start;
-            transition: all 0.5s ease;
-        }
     }
     section.projects .items{
         margin-top: 10px;
