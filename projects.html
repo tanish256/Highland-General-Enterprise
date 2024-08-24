@@ -7,6 +7,54 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    header .banner{
+        height: 200px;
+        .hero{
+            min-height: unset;
+            p{
+                font-size: 40px;
+                color: white;
+                font-weight: 500;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+    .stats{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #235CB1;
+        width: 70%;
+        height: 100px;
+        align-self: center;
+        border-radius: 0 0 20px 20px;
+        .item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            h3{
+                font-size: 30px;
+                color: #FFB400;
+                line-height: 40px;
+            }
+            p{
+                font-size: 18px;
+                color: white;
+                line-height: 25px;
+                font-weight: 100;
+            }
+        }
+    }
+    section.projects .items{
+        width: 90%;
+        gap: 20px;
+        div{
+            width: 27%;
+        }
+    }
+</style>
 <body>
     <div class="root">
         <header>
@@ -32,49 +80,30 @@
             <div class="banner">
                 <img src="banner.webp" alt="">
                 <div class="hero">
-                    <div data-aos="fade-zoom-in" data-aos-duration="1500"class="top">
-                        <img src="logo.png" alt="">
-                        <h1 >HIGHLANDS GENERAL ENTERPRISES</h1>
-                    </div>
-                    <p data-aos="fade-up" data-aos-duration="1000">For all your Engeneering Solutions</p>
-                    <button data-aos="fade-up" data-aos-duration="1500">Contact Us</button>
+                    <p data-aos="fade-up" data-aos-duration="600">Projects</p>
                 </div>
             </div>
         </header>
-        <section class="about">
-            <div data-aos="fade-up" class="info">
-                <h2><span class="blue">COMPANY</span> <span class="orange">PROFILE</span> </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, velit quibusdam. Ea dicta ut officiis fugit est odit quaerat nisi harum, praesentium fuga voluptas perspiciatis minus dolorem eum! In, voluptas?</p>
+        <section class="stats">
+            <div class="item">
+                <h3>50+</h3>
+                <p>Projects Completed</p>
             </div>
-            <div data-aos="fade-up" class="img">
-                <img src="logo.png" alt="">
+            <div class="item">
+                <h3>50+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="item">
+                <h3>50+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="item">
+                <h3>50+</h3>
+                <p>Projects Completed</p>
             </div>
         </section>
-        <section data-aos="fade-up" class="wwd" id="services" >
-            <h2>What We Do</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates hic neque nemo </p>
-            <div class="items">
-                <div data-aos="zoom-in-up">
-                    <p class="back">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda culpa voluptatem dolor at excepturi? Natus quos quia labore ab adipisci error</p>
-                    <img src="building.webp" alt="">
-                    <p>Building construction</p>
-                </div>
-                <div data-aos="zoom-in-up">
-                    <p class="back">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda culpa voluptatem dolor at excepturi? Natus quos quia labore ab adipisci error</p>
-                    <img src="strd.jpg" alt="">
-                    <p>Structural Design</p>
-                </div>
-                <div data-aos="zoom-in-up">
-                    <p class="back">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda culpa voluptatem dolor at excepturi? Natus quos quia labore ab adipisci error</p>
-                    <img src="intd.jpg" alt="">
-                    <p>Interior Design</p>
-                </div>
-            </div>
-            <button data-aos="fade-up">Load more ...</button>
-        </section>
-        <section class="projects" id="projects">
-            <h2 data-aos="fade-up">Our Latest Work</h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt suscipit, quae, inventore eveniet</p>
+        <p style="text-align: center; width: 80%; align-self: center; margin: 20px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi debitis, alias provident necessitatibus delectus laudantium minus vel numquam neque unde totam modi saepe aperiam quisquam qui eum odit libero iure!</p>
+        <section class="projects">
             <div class="items">
                 <div class="project-link" data-aos="zoom-in-up">
                     <img src="building.webp" alt="">
@@ -101,12 +130,7 @@
                     <a href=""></a>
                 </div>
             </div>
-        </section>
-        <section class="nfooter">
-            <div class="bgimg" id="about-us"></div>
-            <h2 data-aos="fade-up" data-aos-duration="800">Contact Us For A Free Consultation</h2>
-            <p data-aos="zoom-in-up" data-aos-duration="800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis maiores accusamus ullam repellat commodi atque provident ratione </p>
-            <button data-aos="fade-up" data-aos-duration="800">Contact Us</button>
+
         </section>
         <footer>
             <div class="about">

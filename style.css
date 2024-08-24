@@ -7,6 +7,10 @@ html{
     background-color: whitesmoke;
     scroll-behavior: smooth;
 }
+.root{
+    display: flex;
+    flex-direction: column;
+}
 header{
     background-color: white;
     width: 100%;
